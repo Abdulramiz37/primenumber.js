@@ -1,0 +1,18 @@
+  Array.prototype.contains = function () {
+        for(let i = 0; i < this.length; i++) {
+        if (this[i] <= 1) { 
+            return false;
+        } else {
+            for (var j = 2; j < this[i]; j++) {
+                if (this[i] % j === 0) {
+                    return false; 
+                }
+            }
+            return true;
+        }  
+    }
+}
+const arr = [2,  4];
+let a = arr.contains();
+   console.log(a) ; 
+   
